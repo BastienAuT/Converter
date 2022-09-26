@@ -1,0 +1,11 @@
+@use "../../styles/vars";
+
+.converter {
+  position: relative;
+  height: 100vh;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 2em;
+  font-weight: vars.$weight-light;
+
+}

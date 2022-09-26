@@ -1,0 +1,34 @@
+@use "../../styles/vars";
+
+.currencies {
+  background-color: vars.$color-light;
+  max-height: 250px;
+  overflow-y: auto;
+
+  &__filter {
+    padding: vars.$gutter;
+    margin-top: vars.$gutter;
+    width: 100%;
+    border: none;
+    color: vars.$color-main;
+    font: inherit;
+    &::placeholder {
+      color: vars.$color-alt;
+    }
+  }
+
+  &__item {
+    padding: vars.$gutter;
+    border-top: 1px solid vars.$color-alt;
+    font-weight: vars.$weight-medium;
+    transition: background-color vars.$transition-slow;
+    &:hover{
+      cursor: pointer;
+      background-color: vars.$color-alt;
+      transition: background-color vars.$transition-fast;
+    }
+  }
+
+}
+
+

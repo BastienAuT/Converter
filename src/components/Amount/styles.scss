@@ -1,0 +1,34 @@
+@use "../../styles/vars";
+
+.amount{
+  background-color: vars.$color-main;
+  color: vars.$color-light;
+  padding: vars.$gutter * 3;
+  text-align: center;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+
+  &__title{
+    font-weight: vars.$weight-bold;
+    font-size: 2rem;
+    margin-bottom: vars.$gutter;
+  }
+
+  &__amount{
+    font-size: 1.5rem;
+  }
+
+  &__value {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    color: vars.$color-light;
+    width: 2.3em;  
+    margin-right: vars.$gutter/2;
+  
+    &:focus {
+      box-shadow: inset 3px 3px 3px rgba(0, 0, 0, .5);
+    }
+  }
+
+}
